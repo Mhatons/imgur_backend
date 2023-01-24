@@ -3,7 +3,7 @@ const router = express.Router()
 const nodemailer = require('nodemailer')
 
 
-const PortfolioModel = require('../models/PortForm_md')
+const PortfolioModel = require('../db_models/PortForm_md')
 
 router.post("/post_form", async (req, res) => {
     let post = await PortfolioModel.create(req.body)
