@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema({
     },
     user_image:{
         type: String,
-        required:[true, 'field is required']
+        // required:[true, 'field is required']
     },
     verified_at:{
         type: String,

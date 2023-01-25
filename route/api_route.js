@@ -19,12 +19,11 @@ let storage = multer.diskStorage({
 
         // fs.writeFileSync("/tmp/users.json", JSON.stringify(users))
         
-        const filePath = path.join("/tmp", "../public/uploads");
-        cb(null, filePath)
+        // const filePath = path.join("/tmp", "../public/uploads");
         // fs.writeFileSync(filePath, JSON.stringify(data));
 
-        // let __dir = path.join(__dirname, "../public/uploads")
-        // cb(null, __dir)
+        let __dir = path.join(__dirname, "../public/uploads")
+        cb(null, __dir)
     }, filename: function (req, file, cb) {
         let fileName = file.originalname.toLowerCase()
         cb(null, fileName)
