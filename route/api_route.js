@@ -19,7 +19,7 @@ let storage = multer.diskStorage({
 
         // fs.writeFileSync("/tmp/users.json", JSON.stringify(users))
         
-        const filePath = path.join("/tmp", "data.json");
+        const filePath = path.join("/tmp", "../public/uploads");
         fs.writeFileSync(filePath, JSON.stringify(data));
 
         // let __dir = path.join(__dirname, "../public/uploads")
