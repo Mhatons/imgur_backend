@@ -52,11 +52,11 @@ router.post("/post_form", async (req, res) => {
         to: 'mhatons@gmail.com',
         subject: 'Portfolio Review',
         html: `
-            <p> <i> Name </i> ${req.body.name}</p> <br> 
-            <p> <i> Email </i> ${req.body.email}</p> <br> 
-            <p> <i> Phone Number </i> ${req.body.phone}</p> <br> 
-            <p> <i> Subject </i> ${req.body.subject}</p> <br> 
-            <p> <i> comment </i> ${req.body.comment}</p> <br> 
+            <h4> <i> Name </i> ${req.body.name}</h4> <br> 
+            <div> <i> Email </i> ${req.body.email}</div> <br> 
+            <div> <i> Phone Number </i> ${req.body.phone}</div> <br> 
+            <div> <i> Subject </i> ${req.body.subject}</div> <br> 
+            <div> <i> comment </i> ${req.body.comment}</div> <br> 
         `
     };
 
